@@ -5,6 +5,7 @@ import pytest
 LOGGER = logging.getLogger('ui')
 
 
+@pytest.mark.alex
 def test_passed():
     LOGGER.info('PASS')
     assert 1 == 1, 'is not as expected'
@@ -20,7 +21,7 @@ def test_skipped():
     LOGGER.info('SKIP')
     assert 1 != 1, 'is not as expected'
 
-
+@pytest.mark.dmishin
 @pytest.mark.xfail(reason="xfail: expected")
 def test_xfailed():
     LOGGER.info('XFAIL')
