@@ -2,17 +2,19 @@ import logging
 
 import pytest
 
-LOGGER = logging.getLogger('ui')
+LOGGER = logging.getLogger('demo')
 
 
 @pytest.mark.alex
 def test_passed():
-    LOGGER.info('PASS')
+    LOGGER.info('Sample log 001')
+    LOGGER.info('Sample log 002')
+    LOGGER.info('Sample log 003')
     assert 1 == 1, 'is not as expected'
 
 
 def test_failed():
-    LOGGER.info('FAIL')
+    LOGGER.info('FAIL :(')
     assert 1 != 1, 'is not as expected'
 
 
