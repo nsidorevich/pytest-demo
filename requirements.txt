@@ -1,0 +1,2 @@
+pytest
+zebrunnerpy == 0.6
