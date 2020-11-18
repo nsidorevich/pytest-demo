@@ -4,6 +4,7 @@ import pytest
 
 LOGGER = logging.getLogger('ui')
 
+
 def test_passed():
     LOGGER.info('PASS')
     assert 1 == 1, 'is not as expected'
